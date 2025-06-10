@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    body {
+      background-image: url(sfondo.jpeg);
+      background-size: cover; 
+      background-position: bottom;
+      font-family: 'Inter', sans-serif;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      background-attachment: fixed;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+     background-color: rgba(0, 71, 171, 0.7);
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     text-align: center;
+     width: 800px;
+     overflow: auto;
+     max-height: 80vh;
+    }
+
+    .container::-webkit-scrollbar {
+     display: none;
+    }
+
+    p, h2, dt, dd, dl {
+     color: white;
+     text-align: left;
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+     font-size: 18px;
+     line-height: 1.6;
+     text-shadow: 2px 2px 4px black;
+    }
+
+
+    h1 {
+     font-size: 36px; 
+     color: whitesmoke;
+     text-align: center;
+     text-shadow: 2px 2px 4px black;
+    }
+
+    a {
+      color: darkseagreen;
+      margin-left: 20px;
+    }
+
+    a:hover {
+      text-shadow: 0px 0px 2px rgb(125, 162, 125);
+      color: rgb(125, 162, 125)
+    }
+
+    dd {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: white;
+      text-align: left;
+      word-wrap: break-word;
+      font-size: 28px;
+      overflow-wrap: break-word;
+      line-height: 1.6;
+      text-shadow: 2px 2px 4px black;
+    }
+
+    .download-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      margin-left: 20px;
+    }
+
+    .download-button:hover {
+      background-color: rgb(0, 86, 179);
+    }
+  </style>
+  <script src="downloadFile1.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+      <h1>Benvenuto</h2>
+      <p>Questa è una raccolta di link di siti che visitiamo spesso e altri siti utili, tra cui i link ad altri siti miei
+        come anche Umberto Tubo demo o link ad altri siti come Suno, e da qui si può anche installare il mio
+        programma "Custom Shield" e in futuro altri programmi di mia invenzione. E non è tutto! Potrete da qui installare
+        anche versioni precedeni dei programmi, non solo l'ultima versione!
+      </p>
+    </div>
+    <div class="Links">
+      <h2 style="margin-top: 40px;">Link:</h2>
+      <dl>
+       <dt>Umberto Tubo (demo)</dt>
+        <dd>La primissima demo del sito Umberto Tubo. <a href="https://umbertotuboteam.github.io/UmbertoTuboDemoOfficial/" target="_blank">Link</a></dd>
+       <dt>Suno (home)</dt>
+        <dd>la home di Suno. <a href="https://suno.com/" target="_blank">Link</a></dd>
+      </dl>
+    </div>
+    <div class="Downloads">
+      <h2 style="margin-top: 40px;">Donwload:</h2>
+      <dl>
+        <dt>Custom Shield</dt>
+        <dd>Un programma potente, capace di fare molto. <button onclick="downloadFile1()" class="download-button">Donwload</button>
+    </div>
+  </div>
+</body>
+</html>
